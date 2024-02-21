@@ -32,3 +32,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 http://localhost:4200/
 http://localhost:4200/users
 http://localhost:4200/servers
+
+## 131. Navigating with Router Links
+
+<!-- this link works but it reloads all the page on every click -->
+<!-- <li role="presentation"><a href="/servers">Servers</a></li> -->
+
