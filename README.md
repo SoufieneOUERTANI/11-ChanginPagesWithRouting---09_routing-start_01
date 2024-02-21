@@ -38,3 +38,8 @@ http://localhost:4200/servers
 <!-- this link works but it reloads all the page on every click -->
 <!-- <li role="presentation"><a href="/servers">Servers</a></li> -->
 
+
+## 132. Understanding Navigation Paths
+
+The absolute path starts with "/" 
+
