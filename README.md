@@ -43,3 +43,5 @@ http://localhost:4200/servers
 
 The absolute path starts with "/" 
 
+## 132 bis. Juste pour init
+
