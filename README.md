@@ -50,3 +50,8 @@ The absolute path starts with "/"
 routerLinkActive
 routerLinkActiveOptions
 
+## 134. Navigating Programmatically
+
+constructor(private router : Router) { }
+this.router.navigate(['/servers']);
+
