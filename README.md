@@ -73,3 +73,7 @@ Unless you specify the relativeTo option
 ## 137. Fetching Route Parameters
 
 http://localhost:4200/users/123/nameExample
+
+## 138. Fetching Route Parameters Reactively
+
+this.route.params.subscribe
