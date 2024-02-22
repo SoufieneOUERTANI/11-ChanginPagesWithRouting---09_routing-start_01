@@ -55,3 +55,11 @@ routerLinkActiveOptions
 constructor(private router : Router) { }
 this.router.navigate(['/servers']);
 
+135. Using Relative Paths in Programmatic Navigation
+
+Unlike the routerLink, the Router's navigate method does not know in which component you are
+So it will consider the router as absolute path
+Unless you specify the relativeTo option
+
+    private route : ActivatedRoute
+    {relativeTo:this.route}
