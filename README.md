@@ -63,3 +63,9 @@ Unless you specify the relativeTo option
 
     private route : ActivatedRoute
     {relativeTo:this.route}
+
+## 136. Passing Parameters to Routes
+
+  {path: 'users:id', component : UsersComponent},
+  http://localhost:4200/users/1
+  http://localhost:4200/users/nothing
