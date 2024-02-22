@@ -77,3 +77,10 @@ http://localhost:4200/users/123/nameExample
 ## 138. Fetching Route Parameters Reactively
 
 this.route.params.subscribe
+
+## 139. An Important Note about Route Observables
+
+paramsSubscription : Subscription
+ngOnDestroy(){
+  this.paramsSubscription.unsubscribe;
+}
