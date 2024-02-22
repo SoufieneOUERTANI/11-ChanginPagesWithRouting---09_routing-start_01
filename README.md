@@ -69,3 +69,7 @@ Unless you specify the relativeTo option
   {path: 'users:id', component : UsersComponent},
   http://localhost:4200/users/1
   http://localhost:4200/users/nothing
+
+## 137. Fetching Route Parameters
+
+http://localhost:4200/users/123/nameExample
