@@ -96,3 +96,10 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
   [routerLink]="['/servers', 1, 'edit']"
   [queryParams]="{allowEdit:1, defaultEdit:0}"
   [fragment]="'loading'"
+
+## 141. Retrieving Query Parameters and Fragments
+
+    console.log(this.route.snapshot.queryParams);
+    console.log(this.route.snapshot.fragment);
+    this.route.queryParams.subscribe();
+    this.route.fragment.subscribe();
