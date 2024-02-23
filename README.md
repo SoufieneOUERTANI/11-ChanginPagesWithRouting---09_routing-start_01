@@ -84,3 +84,15 @@ paramsSubscription : Subscription
 ngOnDestroy(){
   this.paramsSubscription.unsubscribe;
 }
+
+## 140. Passing Query Parameters and Fragments
+
+http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
+
+  {path: 'servers/:id/edit', component : EditServerComponent},
+
+  this.router.navigate(['/servers', id, 'edit'], {queryParams:{allowEdit:'1', defaultEdit:'0'}, fragment: 'loading'});
+
+  [routerLink]="['/servers', 1, 'edit']"
+  [queryParams]="{allowEdit:1, defaultEdit:0}"
+  [fragment]="'loading'"
