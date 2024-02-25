@@ -105,3 +105,17 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
     this.route.fragment.subscribe();
 
 ## 142. Practicing and some Common Gotchas
+
+## 143. Setting up Child (Nested) Routes
+
+  {path: 'servers', component : ServersComponent, children:[
+      {path: ':id', component : ServerComponent},
+      {path: ':id/edit', component : EditServerComponent}
+    ]
+  }
+
+  <router-outlet></router-outlet>
+
+  Il y avait une erruer dans ce path : C'était User*s*Component corrigé en UserComponent 
+  {path: ':id/:name', component : UserComponent}
+
