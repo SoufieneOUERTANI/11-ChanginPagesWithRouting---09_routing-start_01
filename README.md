@@ -103,3 +103,5 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
     console.log(this.route.snapshot.fragment);
     this.route.queryParams.subscribe();
     this.route.fragment.subscribe();
+
+## 142. Practicing and some Common Gotchas
