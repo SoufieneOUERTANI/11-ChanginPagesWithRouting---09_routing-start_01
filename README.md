@@ -119,3 +119,19 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
   Il y avait une erruer dans ce path : C'était User*s*Component corrigé en UserComponent 
   {path: ':id/:name', component : UserComponent}
 
+## 144. Using Query parameters - Practise
+
+    this.router.navigate(['edit'], {relativeTo:this.route});
+
+
+    this.route.queryParams.subscribe(
+      (queryparams : Params) => {
+        this.allowEdit=queryparams['allowEdit'] ==='1'?true:false;
+      }
+    );
+    this.id = +this.route.snapshot.params['id']
+    this.server = this.serversService.getServer(this.id);
+
+    <!-- Le chargement du temoin d'edition ne fonctionne pas encore(toujours not allowed) -->
+    <!-- Ca sera fait dans la prochaine video -->
+    <!-- A la différence du déroulé du court, j'ai rajouté le chargement du bon sreveur -->
