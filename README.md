@@ -156,3 +156,7 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
   
   CanActivate
       canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
+
+##151. Protecting Child (Nested) Routes with canActivateChild
+
+  canActivateChild
