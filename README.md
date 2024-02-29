@@ -152,3 +152,7 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
 
   RouterModule
 
+## 150. Protecting Routes with canActivate
+  
+  CanActivate
+      canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
