@@ -135,3 +135,8 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
     <!-- Le chargement du temoin d'edition ne fonctionne pas encore(toujours not allowed) -->
     <!-- Ca sera fait dans la prochaine video -->
     <!-- A la différence du déroulé du court, j'ai rajouté le chargement du bon sreveur -->
+
+## 145. Configuring the Handling of Query Parameters
+
+    queryParamsHandling :'preserve'
+        this.router.navigate(['edit'], {relativeTo:this.route, queryParamsHandling :'preserve'});
