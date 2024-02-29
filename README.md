@@ -140,3 +140,12 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
 
     queryParamsHandling :'preserve'
         this.router.navigate(['edit'], {relativeTo:this.route, queryParamsHandling :'preserve'});
+
+## 146. Redirecting and Wildcard Routes
+
+  {path : 'not-found', component:PageNotFoundComponent},
+  {path : 'something', redirectTo:'/not-found'},
+  // Make sure is the last path in this list
+  {path : '**', redirectTo:'/not-found'}
+
+
