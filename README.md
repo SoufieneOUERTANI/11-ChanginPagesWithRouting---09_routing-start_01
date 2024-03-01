@@ -188,3 +188,6 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
       }
     )
 
+## 156. Understanding Location Strategies
+
+    useHash : true
