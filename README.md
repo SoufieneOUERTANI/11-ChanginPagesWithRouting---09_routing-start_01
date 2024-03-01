@@ -162,3 +162,5 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
   canActivateChild
 
 ## 152. Using a Fake Auth Service
+
+## 153. Controlling Navigation with canDeactivate
