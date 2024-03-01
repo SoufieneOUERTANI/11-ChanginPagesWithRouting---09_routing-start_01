@@ -164,3 +164,15 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
 ## 152. Using a Fake Auth Service
 
 ## 153. Controlling Navigation with canDeactivate
+
+## 154. Passing Static Data to a Route
+
+    {path : 'not-found', component:ErrorPageComponent, data : {message : 'Page not found !'}},
+
+    this.errorMessage = this.route.snapshot.data['message'];
+    this.route.data.subscribe(
+      (data:Data) => {
+        this.errorMessage = data['message']
+      }
+    );
+

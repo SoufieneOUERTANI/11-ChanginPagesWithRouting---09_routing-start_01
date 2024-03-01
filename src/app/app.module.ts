@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth-guard.service';
 import { CanDesactivateGuard } from './servers/edit-server/can-desactivate-guard.service';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 const appRoutes : Routes = [
   {path: '', component : HomeComponent},
@@ -45,7 +46,8 @@ const appRoutes : Routes = [
     UserComponent,
     EditServerComponent,
     ServerComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
