@@ -160,3 +160,5 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
 ##151. Protecting Child (Nested) Routes with canActivateChild
 
   canActivateChild
+
+## 152. Using a Fake Auth Service
