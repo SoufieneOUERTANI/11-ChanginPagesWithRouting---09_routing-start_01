@@ -18,6 +18,7 @@ import { AuthService } from './auth.service';
 import { AuthGuard } from './auth-guard.service';
 import { CanDesactivateGuard } from './servers/edit-server/can-desactivate-guard.service';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { ServerResolver } from './servers/server/server.resolver.service';
 
 const appRoutes : Routes = [
   {path: '', component : HomeComponent},
@@ -54,7 +55,7 @@ const appRoutes : Routes = [
     FormsModule,
     AppRoutingModule
   ],
-  providers: [ServersService, AuthService, AuthGuard, CanDesactivateGuard],
+  providers: [ServersService, AuthService, AuthGuard, CanDesactivateGuard, ServerResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

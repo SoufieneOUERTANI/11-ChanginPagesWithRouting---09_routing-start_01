@@ -176,3 +176,15 @@ http://localhost:4200/servers/1/edit?allowEdit=1&defaultEdit=0#loading
       }
     );
 
+## 155. Resolving Dynamic Data with the resolve Guard
+
+    export class ServerResolver implements Resolve<Server>{
+
+    {path: ':id', component : ServerComponent, resolve : {server:ServerResolver}},
+
+    this.route.data.subscribe(
+      (data :Data) => {
+        this.server =data['server'];
+      }
+    )
+
